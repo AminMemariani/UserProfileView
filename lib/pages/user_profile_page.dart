@@ -22,7 +22,7 @@ class _UserProfilePageState extends State<UserProfilePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: ListView(
-        children: <Widget>[
+        children: [
           const SizedBox(height: 20),
           AnimatedSwitcher(
             duration: const Duration(milliseconds: 750),
@@ -36,7 +36,7 @@ class _UserProfilePageState extends State<UserProfilePage> {
           ),
           const SizedBox(height: 40),
           Wrap(
-            children: <Widget>[
+            children: [
               for (int i = 0; i < AppData.profiles.length; i++)
                 GestureDetector(
                   onTap: () {
@@ -66,73 +66,71 @@ class HeaderSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Column(
-        children: <Widget>[
-          Container(
-            height: 110,
-            width: 100,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(100),
-              image: DecorationImage(image: AssetImage(profile?.imageUrl ?? ""), fit: BoxFit.cover),
-            ),
+    return Column(
+      children: [
+        Container(
+          height: 110,
+          width: 100,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(100),
+            image: DecorationImage(image: AssetImage(profile?.imageUrl ?? ""), fit: BoxFit.cover),
           ),
-          const SizedBox(height: 20),
-          Container(
-            alignment: Alignment.center,
-            child: Text(
-              profile?.title ?? "",
-              textAlign: TextAlign.center,
-              style: const TextStyle(fontWeight: FontWeight.w600, fontSize: 20),
-            ),
+        ),
+        const SizedBox(height: 20),
+        Container(
+          alignment: Alignment.center,
+          child: Text(
+            profile?.title ?? "",
+            textAlign: TextAlign.center,
+            style: const TextStyle(fontWeight: FontWeight.w600, fontSize: 20),
           ),
-          const SizedBox(height: 20),
-          Container(
-            margin: const EdgeInsets.symmetric(horizontal: 20),
-            alignment: Alignment.center,
-            child: Text(
-              profile?.subtitle ?? "",
-              textAlign: TextAlign.center,
-            ),
+        ),
+        const SizedBox(height: 20),
+        Container(
+          margin: const EdgeInsets.symmetric(horizontal: 20),
+          alignment: Alignment.center,
+          child: Text(
+            profile?.subtitle ?? "",
+            textAlign: TextAlign.center,
           ),
-          const SizedBox(height: 20),
-          Container(
-            margin: const EdgeInsets.symmetric(horizontal: 16),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: <Widget>[
-                Column(
-                  children: <Widget>[
-                    Text(
-                      profile?.totalPost ?? "",
-                      style: const TextStyle(fontWeight: FontWeight.w600),
-                    ),
-                    const Text('Post')
-                  ],
-                ),
-                Column(
-                  children: <Widget>[
-                    Text(
-                      profile?.totalFollowers ?? "",
-                      style: const TextStyle(fontWeight: FontWeight.w600),
-                    ),
-                    const Text('Followers')
-                  ],
-                ),
-                Column(
-                  children: <Widget>[
-                    Text(
-                      profile?.totalFollowing ?? "",
-                      style: const TextStyle(fontWeight: FontWeight.w600),
-                    ),
-                    const Text('Following')
-                  ],
-                )
-              ],
-            ),
-          )
-        ],
-      ),
+        ),
+        const SizedBox(height: 20),
+        Container(
+          margin: const EdgeInsets.symmetric(horizontal: 16),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Column(
+                children: [
+                  Text(
+                    profile?.totalPost ?? "",
+                    style: const TextStyle(fontWeight: FontWeight.w600),
+                  ),
+                  const Text('Post')
+                ],
+              ),
+              Column(
+                children: [
+                  Text(
+                    profile?.totalFollowers ?? "",
+                    style: const TextStyle(fontWeight: FontWeight.w600),
+                  ),
+                  const Text('Followers')
+                ],
+              ),
+              Column(
+                children: [
+                  Text(
+                    profile?.totalFollowing ?? "",
+                    style: const TextStyle(fontWeight: FontWeight.w600),
+                  ),
+                  const Text('Following')
+                ],
+              )
+            ],
+          ),
+        )
+      ],
     );
   }
 }
