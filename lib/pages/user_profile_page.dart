@@ -4,7 +4,6 @@ import '../app_data/app_data.dart';
 import '../models/profile.dart';
 
 class UserProfilePage extends StatefulWidget {
-
   @override
   _UserProfilePageState createState() => _UserProfilePageState();
 }
@@ -26,8 +25,12 @@ class _UserProfilePageState extends State<UserProfilePage> {
           const SizedBox(height: 20),
           AnimatedSwitcher(
             duration: const Duration(milliseconds: 750),
-            transitionBuilder: (Widget child, Animation<double> animation) => SlideTransition(
-              position: Tween<Offset>(begin: const Offset(0.0, 1.0), end: const Offset(0.0, 0.0)).animate(animation),
+            transitionBuilder: (Widget child, Animation<double> animation) =>
+                SlideTransition(
+              position: Tween<Offset>(
+                      begin: const Offset(0.0, 1.0),
+                      end: const Offset(0.0, 0.0))
+                  .animate(animation),
               child: child,
             ),
             child: HeaderSection(
@@ -46,7 +49,11 @@ class _UserProfilePageState extends State<UserProfilePage> {
                   child: Container(
                     height: MediaQuery.of(context).size.width / 3,
                     width: MediaQuery.of(context).size.width / 3,
-                    decoration: BoxDecoration(image: DecorationImage(image: AssetImage(AppData.profiles[i].imageUrl ?? ""), fit: BoxFit.cover)),
+                    decoration: BoxDecoration(
+                        image: DecorationImage(
+                            image:
+                                AssetImage(AppData.profiles[i].imageUrl ?? ""),
+                            fit: BoxFit.cover)),
                   ),
                 )
             ],
@@ -73,7 +80,8 @@ class HeaderSection extends StatelessWidget {
           width: 100,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(100),
-            image: DecorationImage(image: AssetImage(profile?.imageUrl ?? ""), fit: BoxFit.cover),
+            image: DecorationImage(
+                image: AssetImage(profile?.imageUrl ?? ""), fit: BoxFit.cover),
           ),
         ),
         const SizedBox(height: 20),
@@ -96,6 +104,16 @@ class HeaderSection extends StatelessWidget {
         ),
         const SizedBox(height: 20),
         Container(
+          decoration: BoxDecoration(
+              borderRadius: const BorderRadius.all(Radius.circular(10)),
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.black.withOpacity(0.15),
+                  spreadRadius: 0,
+                  blurRadius: 20,
+                  offset: const Offset(0, 4),
+                )
+              ]),
           margin: const EdgeInsets.symmetric(horizontal: 16),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
