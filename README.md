@@ -29,6 +29,7 @@ This repository contains a Flutter widget for displaying a user profile. It incl
    flutter pub get
    ```
 3. **Run the code**
+
     connect your desired device and run:
     ```
     flutter run
