@@ -121,8 +121,7 @@ class HeaderSection extends StatelessWidget {
         Container(
           padding: const EdgeInsets.all(10),
           decoration: BoxDecoration(
-              color: Theme.of(context)
-                  .canvasColor, //Color.fromARGB(255, 249, 244, 250),
+              color: Theme.of(context).canvasColor,
               borderRadius: const BorderRadius.all(Radius.circular(10)),
               boxShadow: [
                 BoxShadow(
