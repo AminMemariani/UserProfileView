@@ -1,16 +1,2 @@
 # profile
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+[![Watch the video](https://private-user-images.githubusercontent.com/18459313/377371004-0568e13c-91f5-4c65-9527-969a7fd4e991.mp4?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjkxNTI2MzQsIm5iZiI6MTcyOTE1MjMzNCwicGF0aCI6Ii8xODQ1OTMxMy8zNzczNzEwMDQtMDU2OGUxM2MtOTFmNS00YzY1LTk1MjctOTY5YTdmZDRlOTkxLm1wND9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEwMTclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMDE3VDA4MDUzNFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTAxNzFlNzViMjcyYTExM2IyNDMxOTk1MzBlYWYwMDQ0OTliMmFlNDZiODI1ZWFjZWEzYmViOTJlODE2YTJjZjImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.M-55uUlS9eZuSkqR-ksjbScPt1Z4oERvM-pxm3nO0HU)
