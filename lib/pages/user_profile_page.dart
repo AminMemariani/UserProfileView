@@ -102,15 +102,32 @@ class HeaderSection extends StatelessWidget {
             textAlign: TextAlign.center,
           ),
         ),
+        Container(
+          margin: const EdgeInsets.symmetric(horizontal: 20),
+          alignment: Alignment.center,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const Icon(Icons.link),
+              Text(
+                profile?.webLink ?? "",
+                textAlign: TextAlign.center,
+                style: const TextStyle(color: Colors.blue),
+              ),
+            ],
+          ),
+        ),
         const SizedBox(height: 20),
         Container(
+          padding: const EdgeInsets.all(10),
           decoration: BoxDecoration(
+              color: const Color.fromARGB(255, 249, 244, 250),
               borderRadius: const BorderRadius.all(Radius.circular(10)),
               boxShadow: [
                 BoxShadow(
                   color: Colors.black.withOpacity(0.15),
                   spreadRadius: 0,
-                  blurRadius: 20,
+                  blurRadius: 30,
                   offset: const Offset(0, 4),
                 )
               ]),
