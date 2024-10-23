@@ -105,16 +105,21 @@ class HeaderSection extends StatelessWidget {
         Container(
           margin: const EdgeInsets.symmetric(horizontal: 20),
           alignment: Alignment.center,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              const Icon(Icons.link),
-              Text(
-                profile?.webLink ?? "",
-                textAlign: TextAlign.center,
-                style: const TextStyle(color: Colors.blue),
-              ),
-            ],
+          child: GestureDetector(
+            onTap: () {
+              // launch the url here
+            },
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const Icon(Icons.link),
+                Text(
+                  profile?.webLink ?? "",
+                  textAlign: TextAlign.center,
+                  style: const TextStyle(color: Colors.blue),
+                ),
+              ],
+            ),
           ),
         ),
         const SizedBox(height: 20),
